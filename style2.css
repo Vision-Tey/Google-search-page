@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-top: 14px;
+}
+nav a{
+  font-size: 13px;
+  display: inline-block;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 5px;
+  color: rgb(10, 9, 9);
+}
+nav a:hover{
+  text-decoration: underline;
+  opacity: 0.85;
+}
+nav img{
+  width: 34px;
+  padding: 5px;
+  margin: auto 7px;
+}
+
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 0.3fr 1fr;
+  grid-template-areas: 
+    "img"
+    "s-box"
+    "lang"
+    ;
+    gap: 0.2rem;
+}
+
+.section{
+  flex: 1;
+}
+
+.img{
+  margin-left: 40%;
+  height: 50px;
+  width: 100px;
+  margin-top: 0%;
+}
+.s-box{
+  width: 580px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.s-box .s-input{
+  display: block;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  padding: 13px;
+  padding-left: 45px;
+  border-radius: 25px;
+  width: 90%;
+  outline: none;
+}
+
+/* .s-box .s-input:hover{
+  border: 1px solid #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+              0 0 2px rgba(0, 0, 0, 0.05);
+              0 0 2px rgba(0, 0, 0, 0.05);
+              0 0 2px rgba(0, 0, 0, 0.05);
+              0 0 2px rgba(0, 0, 0, 0.05);
+              0 0 2px rgba(0, 0, 0, 0.05);
+              0 0 2px rgba(0, 0, 0, 0.05);
+} */
+
+.search-icon{
+  width: 20px;
+  opacity: .4;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+.voice-icon{
+  width: 24px;
+  position: absolute;
+  top: 13px;
+  right: 24px;
+}
+.s-button{
+  border: 1px solid transparent;
+  padding: 9px 15px;
+  color: #666;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 28px;
+  margin-right: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: 100ms;
+}
+.s-button:hover{
+  border: 1px solid #aaa;
+}
+.lang{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #111;
+}
+.lang a{
+  margin-left: 5px;
+  color: #1a0dab;
+
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+}
+.foot ul{
+  display: flex;
+  list-style-type: none;
+  font: 1em sans-serif;
+  text-decoration: none;
+  padding: 0 5px;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+
+.main{
+  margin-left: 40%;
+}
+footer{
+  margin-bottom: 0%;
+  background-color: rgb(238, 238, 238);
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0%;
+  height: 100px;
+  align-items: center;
+}
